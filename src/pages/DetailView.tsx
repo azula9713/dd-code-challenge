@@ -1,13 +1,13 @@
 import { FC, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import DetailsSection from "../components/Common/DetailsSection";
+import Loader from "../components/Common/Loader";
 import { GET_SPELL_DETAILS } from "../services/dnd5eAPI";
 import { ISpellDetails } from "../interface/spellsInterface";
+import ClassIcons from "../data/ClassIcons";
 
 import SpellBg from "../assets/spellBg.jpg";
-import DetailsSection from "../components/Common/DetailsSection";
-import ClassIcons from "../data/ClassIcons";
-import Loader from "../components/Common/Loader";
 
 const DetailView: FC = () => {
   const { spellId } = useParams();

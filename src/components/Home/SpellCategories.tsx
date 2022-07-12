@@ -5,13 +5,13 @@ import { useRecoilState, useRecoilValue } from "recoil";
 
 import Loader from "../Common/Loader";
 
-import ISpellClass from "../../interface/spellClassInterface";
-import ClassIcons from "../../data/ClassIcons";
 import { categoryViewState } from "../../atoms/otherAtom";
 import {
   selectedCategoryState,
   spellClassesState,
 } from "../../atoms/spellsAtom";
+import ISpellClass from "../../interface/spellClassInterface";
+import ClassIcons from "../../data/ClassIcons";
 
 interface Props {
   categories: ISpellClass[];

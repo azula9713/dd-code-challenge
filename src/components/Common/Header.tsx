@@ -4,8 +4,9 @@ import { HeartIcon } from "@heroicons/react/solid";
 import { useRecoilState } from "recoil";
 
 import SearchBox from "./SearchBox";
-import Logo from "../../assets/logo.png";
 import { favouriteSpellsState } from "../../atoms/spellsAtom";
+
+import Logo from "../../assets/logo.png";
 
 const Header: FC = () => {
   const [favoSpells, setFavoSpells] = useRecoilState(favouriteSpellsState);

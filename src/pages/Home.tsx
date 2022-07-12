@@ -13,11 +13,11 @@ import {
 import ListSpells from "../components/Home/ListSpells";
 import SearchBox from "../components/Common/SearchBox";
 import SpellCategories from "../components/Home/SpellCategories";
+import Loader from "../components/Common/Loader";
 import { ISpell } from "../interface/spellsInterface";
 import ISpellClass from "../interface/spellClassInterface";
 
 import HeroBg from "../assets/herobg.jpg";
-import Loader from "../components/Common/Loader";
 
 const Home: FC = () => {
   const [spells, setSpells] = useRecoilState<ISpell[]>(allSpellsState);

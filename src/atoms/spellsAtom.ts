@@ -1,4 +1,5 @@
 import { atom } from "recoil";
+
 import ISpellClass from "../interface/spellClassInterface";
 import { ISpell } from "../interface/spellsInterface";
 

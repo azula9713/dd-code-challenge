@@ -1,9 +1,8 @@
 import { FC } from "react";
+import { useRecoilValue } from "recoil";
 
 import SpellCard from "../Common/SpellCard";
-
 import { ISpell } from "../../interface/spellsInterface";
-import { useRecoilValue } from "recoil";
 import { categoryViewState } from "../../atoms/otherAtom";
 
 interface Props {

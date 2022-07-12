@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { useRecoilState } from "recoil";
+
 import { searchTextState } from "../../atoms/spellsAtom";
 
 const SearchBox: FC = () => {

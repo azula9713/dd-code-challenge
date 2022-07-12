@@ -1,9 +1,10 @@
 import { FC } from "react";
 import { useRecoilValue } from "recoil";
 
-import HeroBg from "../assets/herobg.jpg";
-import { favouriteSpellsState } from "../atoms/spellsAtom";
 import ListSpells from "../components/Home/ListSpells";
+import { favouriteSpellsState } from "../atoms/spellsAtom";
+
+import HeroBg from "../assets/herobg.jpg";
 
 const FavouriteSpells: FC = () => {
   const favoSpells = useRecoilValue(favouriteSpellsState);
