@@ -41,7 +41,6 @@ const SpellCard: FC<Props> = ({ spell }) => {
       className="h-16 p-2 bg-white my-2 rounded-md flex items-center justify-between"
     >
       {/* Level */}
-      <div className="w-1/6 ml-2">{spell.level}</div>
       <Link to={`/spells/${spell.index}`} className="w-full">
         <div className="flex flex-col w-2/3">
           {/* Name */}

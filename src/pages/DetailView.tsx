@@ -40,11 +40,11 @@ const DetailView: FC = () => {
       }}
       className="h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)] overflow-hidden"
     >
-      <div className="h-max overflow-y-scroll scrollbar-hide my-3 p-4 flex flex-col items-center justify-center w-full">
+      <div className="h-max overflow-y-scroll scrollbar-hide my-3 p-4 md:flex md:flex-col md:items-center md:justify-center w-full">
         <h1 className="text-red-800 uppercase font-bold text-center text-3xl font-cinzel">
           {spellData.name}
         </h1>
-        <div className="mt-4 lg:mt-14 w-max flex flex-col items-start justify-center font-cardo p-2">
+        <div className="mt-4 lg:mt-14 flex flex-col items-start justify-center font-cardo p-2">
           <DetailsSection title="Range" value={spellData.range} />
           <DetailsSection title="Casting Time" value={spellData.casting_time} />
           <DetailsSection

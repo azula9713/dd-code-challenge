@@ -8,7 +8,6 @@ interface IDamageType {
 export interface ISpell {
   name: string;
   index: string;
-  level: number;
   duration: string;
   damage: IDamageType;
   classes: [

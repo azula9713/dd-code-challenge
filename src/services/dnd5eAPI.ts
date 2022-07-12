@@ -5,18 +5,9 @@ export const GET_ALL_SPELLS = gql`
   query GetSpells($limit: Int) {
     spells(limit: $limit) {
       name
-      url
-      level
       index
-      components
       attack_type
-      casting_time
       duration
-      range
-      area_of_effect {
-        type
-        size
-      }
       damage {
         damage_type {
           name
