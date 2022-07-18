@@ -18,7 +18,7 @@ const ListSpells: FC<Props> = ({ listSpells }) => {
     <div
       className={`p-8 h-[calc(100vh-${calcValue})] md:h-[calc(100vh-30rem)] xl:h-[calc(100vh-20rem)] overflow-y-scroll scrollbar-hide md:grid md:grid-cols-2 xl:grid-cols-3 gap-4`}
     >
-      {listSpells.map((spell) => (
+      {listSpells?.map((spell) => (
         <SpellCard key={spell.index} spell={spell} />
       ))}
     </div>
